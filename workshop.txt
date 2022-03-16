@@ -1,7 +1,12 @@
 version=1
-id=2768901065
-title=Universal Repair and Patch Clothing
+id=2779627490
+title=Universal Repair  Clothing
+description=It allows you to repair and patch ANY kind of clothing, from ANY mod and vanilla.
 description=
+description=No extra dependencies, no extra downloads, no options, no BS.
 description=
-tags=Build 41;Clothing/Armor;Interface;Items;Misc;Pop Culture;Silly/Fun;Textures
+description=Just get leather straps, thread and a needle, and go fix your clothes.
+description=
+description=Well, and don't forget to have fun <3
+tags=Build 41;Clothing/Armor;Misc;Silly/Fun
 visibility=public
