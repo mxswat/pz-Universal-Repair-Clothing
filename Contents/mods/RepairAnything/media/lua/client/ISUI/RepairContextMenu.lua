@@ -5,7 +5,7 @@ ISInventoryPaneContextMenu.onInspectClothing = function(playerObj, clothing)
     local scriptItem = clothing:getScriptItem()
     local fabricType = scriptItem:getFabricType()
 
-    if scriptItem and fabricType == nil then
+    if scriptItem and fabricType == nil and clothing:getCoveredParts():size() > 0 then
         scriptItem:DoParam("FabricType = Leather")
     end
 
