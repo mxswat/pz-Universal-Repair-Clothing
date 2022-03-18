@@ -39,9 +39,10 @@ ISInventoryPaneContextMenu.createMenu = function(player, isInPlayerInventory, it
                     local toolItem = InventoryItemFactory.CreateItem(tools);
                     tooltip.description = getText("ContextMenu_Require", toolItem:getDisplayName());
                     option.toolTip = tooltip;
-                    return;
                 end
             end
         end
     end
+
+    return context
 end
