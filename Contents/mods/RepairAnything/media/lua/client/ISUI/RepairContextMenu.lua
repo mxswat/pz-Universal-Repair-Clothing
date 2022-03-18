@@ -22,25 +22,25 @@ ISInventoryPaneContextMenu.createMenu = function(player, isInPlayerInventory, it
 
         if scriptItem and fabricType == nil and clothing:getCoveredParts():size() > 0 then
             scriptItem:DoParam("FabricType = Leather")
-        end
 
-        if not playerObj:isEquippedClothing(clothing) then
-            local option = context:addOption(getRecipeDisplayName("Rip clothing"), playerObj, ISInventoryPaneContextMenu.onRipClothing, items)
-            -- Item is favourited, add tooltip
-            if clothing:isFavorite() then
-                local tooltip = ISInventoryPaneContextMenu.addToolTip();
-                tooltip.description = getText("ContextMenu_CantRipFavourite");
-                option.toolTip = tooltip;
-            end
-            -- Tool is needed
-            local tools = ClothingRecipesDefinitions["FabricType"][clothing:getFabricType()].tools;
-            if tools and not playerObj:getInventory():getItemFromType(tools, true, true) then
-                option.notAvailable = true;
-                local tooltip = ISInventoryPaneContextMenu.addToolTip();
-                local toolItem = InventoryItemFactory.CreateItem(tools);
-                tooltip.description = getText("ContextMenu_Require", toolItem:getDisplayName());
-                option.toolTip = tooltip;
-                return;
+            if not playerObj:isEquippedClothing(clothing) then
+                local option = context:addOption(getRecipeDisplayName("Rip clothing"), playerObj, ISInventoryPaneContextMenu.onRipClothing, items)
+                -- Item is favourited, add tooltip
+                if clothing:isFavorite() then
+                    local tooltip = ISInventoryPaneContextMenu.addToolTip();
+                    tooltip.description = getText("ContextMenu_CantRipFavourite");
+                    option.toolTip = tooltip;
+                end
+                -- Tool is needed
+                local tools = ClothingRecipesDefinitions["FabricType"][clothing:getFabricType()].tools;
+                if tools and not playerObj:getInventory():getItemFromType(tools, true, true) then
+                    option.notAvailable = true;
+                    local tooltip = ISInventoryPaneContextMenu.addToolTip();
+                    local toolItem = InventoryItemFactory.CreateItem(tools);
+                    tooltip.description = getText("ContextMenu_Require", toolItem:getDisplayName());
+                    option.toolTip = tooltip;
+                    return;
+                end
             end
         end
     end
