@@ -28,7 +28,7 @@ ISInventoryPaneContextMenu.createMenu = function(player, isInPlayerInventory, it
         end
 
         if ripItemsCache[scriptItem:getFullName()] then
-            local option = context:addOption(getRecipeDisplayName("Rip clothing"), playerObj, ISInventoryPaneContextMenu.onRipClothing, items)
+            local option = context:addOption(getRecipeDisplayName("Rip clothing"), playerObj, ISInventoryPaneContextMenu.mxOnRipClothing, items)
             -- Item is favourited, add tooltip
             if clothing:isFavorite() then
                 local tooltip = ISInventoryPaneContextMenu.addToolTip();
@@ -57,4 +57,17 @@ ISInventoryPaneContextMenu.createMenu = function(player, isInPlayerInventory, it
     end
 
     return context
+end
+
+-- Needed to fix a bug caused by an unknown mod that was fucking around wiht the ClothingRecipesDefinitions
+ISInventoryPaneContextMenu.mxOnRipClothing = function(playerObj, items)
+	items = ISInventoryPane.getActualItems(items)
+	local items2 = {}
+	for _,item in ipairs(items) do
+		ISInventoryPaneContextMenu.transferIfNeeded(playerObj, item)
+        table.insert(items2, item)
+	end
+	for _,item in ipairs(items2) do
+        ISTimedActionQueue.add(ISRipClothing:new(playerObj, item))
+	end
 end
