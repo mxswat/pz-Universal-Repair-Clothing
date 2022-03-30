@@ -10,5 +10,10 @@ description=
 description=You can also rip shoes and item that previously you were not able to rip
 description=
 description=Well, and don't forget to have fun <3
+description=
+description=Check out [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2768901065] [b]Fashionoid - Gear Transmog[/b] [/url] for a full tailoring experience (click the image)
+description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2768901065][img]https://i.imgur.com/l7U3CIW.png[/img][/url]
+description=Source: https://github.com/mxswat/pz-Universal-Repair-Clothing
+description=https://discord.gg/7FAYkCJJcb If you want to get in touch
 tags=Build 41;Clothing/Armor;Misc;Silly/Fun
 visibility=public

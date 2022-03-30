@@ -17,7 +17,7 @@ ISInventoryPaneContextMenu.createMenu = function(player, isInPlayerInventory, it
         end
     end
 
-    local playerObj = getSpecificPlayer(player)
+    local playerObj = getPlayer()
     if tostring(#items) == "1" and clothing then
         local scriptItem = clothing:getScriptItem()
         local fabricType = scriptItem:getFabricType()
@@ -35,15 +35,18 @@ ISInventoryPaneContextMenu.createMenu = function(player, isInPlayerInventory, it
                 tooltip.description = getText("ContextMenu_CantRipFavourite");
                 option.toolTip = tooltip;
             end
-            
-            local tools = ClothingRecipesDefinitions["FabricType"][clothing:getFabricType()].tools;
+
+            -- tools previously used `ClothingRecipesDefinitions["FabricType"][clothing:getFabricType()].tools;`
+            -- I hard coded using scissors because I don't trust other modders to not fuck up the ClothingRecipesDefinitions
+            local tools = "Base.Scissors"; 
+            local playerInventory = playerObj:getInventory()
             if playerObj:isEquippedClothing(clothing) then
                 option.notAvailable = true;
                 local tooltip = ISInventoryPaneContextMenu.addToolTip();
                 tooltip.description = getText("ContextMenu_Require", "Unequip");
                 option.toolTip = tooltip;
                 -- If Tool is needed
-            elseif tools and not playerObj:getInventory():getItemFromType(tools, true, true) then
+            elseif playerInventory and not playerInventory:getItemFromType(tools, true, true) then
                 option.notAvailable = true;
                 local tooltip = ISInventoryPaneContextMenu.addToolTip();
                 local toolItem = InventoryItemFactory.CreateItem(tools);
