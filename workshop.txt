@@ -1,21 +1,30 @@
 version=1
 id=2779627490
 title=Universal Repair  Clothing 2.0!
-description=2.0 IS NOW LIVE! And it uses the vanilla "Rip Clothing" UI And Crafting System!
-description=
-description=It allows you to repair and patch ANY kind of clothing, from ANY mod and vanilla.
-description=
-description=No extra dependencies, no extra downloads, no options, no BS.
-description=
-description=Just get leather straps, thread and a needle, and go fix your clothes.
-description=
-description=You can also rip shoes, firefigher gear, helmets and item that previously you were not able to rip
-description=
-description=Well, and don't forget to have fun <3
-description=
-description=Check out [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2768901065] [b]Fashionoid - Gear Transmog[/b] [/url] for a full tailoring experience (click the image)
-description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2768901065][img]https://i.imgur.com/l7U3CIW.png[/img][/url]
-description=Source: https://github.com/mxswat/pz-Universal-Repair-Clothing
-description=https://discord.gg/7FAYkCJJcb If you want to get in touch
+description=2.0 IS NOW LIVE! And it now uses the vanilla "Rip Clothing" UI And Crafting System!
+description=Enjoy the ability to rip multiple clothing at once!
+description=
+description=
+description=[b]It allows you to repair and patch ANY clothing from ANY MOD and vanilla.[/b]
+description=Yes, stop asking; it works with Brita, with authentic Z, and even with that mod that only you and your friends have installed.
+description=It just works with all mods.
+description=
+description=
+description=No extra dependencies, no additional downloads, no options, no BS.
+description=
+description=
+description=Just get leather straps, thread, and a needle, and go fix your clothes.
+description=
+description=
+description=You can also rip shoes, firefighter gear, helmets, and items previously you could not rip.
+description=
+description=
+description=Well, and don't forget to have fun <3
+description=
+description=
+description=Check out [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2768901065] [b]Fashionoid - Gear Transmog[/b] [/url] for a full tailoring experience (click the image)
+description=[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2768901065][img]https://i.imgur.com/l7U3CIW.png[/img][/url]
+description=Source: https://github.com/mxswat/pz-Universal-Repair-Clothing
+description=https://discord.gg/7FAYkCJJcb If you want to get in touch
 tags=Build 41;Clothing/Armor;Misc;Silly/Fun
 visibility=public
