@@ -1,13 +1,15 @@
 version=1
 id=2779627490
-title=Universal Repair  Clothing
+title=Universal Repair  Clothing 2.0!
+description=2.0 IS NOW LIVE! And it uses the vanilla "Rip Clothing" UI And Crafting System!
+description=
 description=It allows you to repair and patch ANY kind of clothing, from ANY mod and vanilla.
 description=
 description=No extra dependencies, no extra downloads, no options, no BS.
 description=
 description=Just get leather straps, thread and a needle, and go fix your clothes.
 description=
-description=You can also rip shoes and item that previously you were not able to rip
+description=You can also rip shoes, firefigher gear, helmets and item that previously you were not able to rip
 description=
 description=Well, and don't forget to have fun <3
 description=
